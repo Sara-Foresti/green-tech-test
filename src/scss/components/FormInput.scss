@@ -1,0 +1,53 @@
+.form__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  position: relative;
+
+  &--text {
+    color: $dark-gray;
+    font-family: Gotham SSm A, Gotham SSm B, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 13px;
+    border: 1px solid $lighter-gray;
+    border-radius: 8px;
+
+    &:focus {
+    	outline: none;
+    }
+  }
+
+  &-label--text {
+    color: $dark-gray;
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 8px;
+  }
+
+  &--checkbox {
+    display: none;
+  }
+
+  &--checkbox:checked + &--customCheckbox {
+    background: $azure url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1'  width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath fill='#000000' d='M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z' /%3E%3C/svg%3E") no-repeat 95%;
+  }
+
+  &--customCheckbox {
+    height: 20px;
+    width: 20px;
+    border: 1px solid $lighter-gray;
+    position: absolute;
+    top: -2px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  &-label--checkbox {
+    color: $dark-gray;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 25px;
+  }
+}

@@ -1,16 +1,11 @@
-@import './scss/components/App.scss';
 @import './scss/settings/colours.scss';
+@import './scss/settings/fonts.scss';
+@import './scss/settings/generic.scss';
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import './scss/components/App.scss';
+@import './scss/components/Button.scss';
+@import './scss/components/Form.scss';
+@import './scss/components/FormContainer.scss';
+@import './scss/components/FormInput.scss';
+@import './scss/components/Headline.scss';
+@import './scss/components/Logo.scss';
