@@ -27,27 +27,44 @@
   }
 
   &--checkbox {
-    display: none;
+    position: relative;
+    width: 0;
+    height: 0;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: 1px solid $lighter-gray;
+      content: "✓";
+      cursor: pointer;
+      color: $white;
+      text-align: center;
+      font-size: 17px;
+    }
   }
 
-  &--checkbox:checked + &--customCheckbox {
-    background: $azure url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1'  width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath fill='#000000' d='M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z' /%3E%3C/svg%3E") no-repeat 95%;
-  }
-
-  &--customCheckbox {
-    height: 20px;
-    width: 20px;
-    border: 1px solid $lighter-gray;
-    position: absolute;
-    top: -2px;
-    border-radius: 4px;
-    cursor: pointer;
+  &--checkbox:checked {
+    &::before {
+      background-color: $azure;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 
   &-label--checkbox {
     color: $dark-gray;
     font-size: 14px;
     font-weight: 400;
-    padding-left: 25px;
+    padding-left: 35px;
+  }
+
+  &--error {
+    color: #f12e2e;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 14px;
   }
 }

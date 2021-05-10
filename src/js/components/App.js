@@ -2,7 +2,6 @@
 import React from 'react';
 import FormContainer from './FormContainer';
 
-// functional component
 function App() {
   return (
     <div className="app">
@@ -10,17 +9,5 @@ function App() {
     </div>
   );
 }
-
-
-// class component
-// class App extends React.Component {
-//   render() {
-//     return (
-//       <div className="app">
-//         <Logo />
-//       </div>
-//     )
-//   }
-// }
 
 export default App;
