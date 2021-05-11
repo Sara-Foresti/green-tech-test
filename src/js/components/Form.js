@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import FormInput from './FormInput';
+import FormInput from './FormInput';  
 
 class Form extends React.Component {
   constructor() {
